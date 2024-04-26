@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.container{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(19, 19, 19);
+}
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.apresentacao img{
+    border-radius: 100%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.nome{
+    font-size: 80px;
+    background-image: linear-gradient(to right, black, rgb(255, 0, 0));
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    animation: animated 5s linear infinite;
+}
+.cargo{
+    background-image: linear-gradient(to right, black, rgb(255, 253, 253));
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    animation: animated 5s linear infinite;
+}
+@keyframes animated{
+    to {background-position-x: 430px};
+}
+.sobreMim{
+    color: white;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 8%;
+    text-align: justify;
+}
+.sobreMim p{
+    color: rgb(174, 173, 173);
+    font-size: 30px;
+    margin-top: 0;
+}
+.cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 20px;
+    width: 80%;
+}
+.cursos{
+    margin-top: 20px;
+    align-items: start;
+    text-align: justify;
+    width: 80%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.cursos li{
+    font-size: 30px;
+    color: rgb(174, 173, 173);
+}
+.projetosELinguagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+    height: auto;
+    margin-bottom: 3%;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.containerProjetos{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(198, 186, 186);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.containerProjetos p{
+    font-size: 20px;
+    color: black;
+}
+.contatos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contatos p{
+    font-size: 20px;
+    color: rgb(255, 251, 251);
+}
+
+@media screen and (max-width: 768px) {
+
+    .container{
+        align-items: center;
+        justify-content: center;
+    }
+    .apresentacao{
+        width: 60%;
+        gap: 10px;
+        
+    }
+    .apresentacao img{
+        width: 60%;
+        margin-right: 5%;
+    }
+    .apresentacao h1{
+        align-self: center;
+        justify-self: center;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .sobreMim{
+        margin-left: 0;
+        width: 80%;
+        text-align: left;
+    
+    }
+    .cursos{
+        margin-left: 0;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+    }
+    .projetosELinguagens{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .containerProjetos{
+        width: 80%;
+    }
+}
